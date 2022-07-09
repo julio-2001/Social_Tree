@@ -8,12 +8,14 @@
 
 .containerCr{
     width: 100%;
-    height: 100vh;
+    height: calc(100vh);
     background: #faf7fc;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: scroll;
+   
 }
 
 .containerCr .containerCr_img{
@@ -76,5 +78,29 @@
     color: #bb99dd;
     font-size: 16px;
     font-weight: 600;
-    
+}
+
+.containerCr_iconesPlataformas{
+    width:57% ;
+    height: 24px;
+}
+
+.containerCr_iconesPlataformas ul{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.containerCr_iconesPlataformas ul li{
+    display: flex;
+    margin: 68px 0px;
+
+}
+
+
+@media (max-height:600px){
+    .containerCr{
+        height: 100%;
+    }
+
 }
